@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/aj0ax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+</head>
+<script>
+ 
+  var x = 0;
+  var width=window.innerWidth;
+  var t=0;
+  var m=0;
+$(document).ready(function(){
+window.addEventListener("resize",function1)
+function function1(){
+  var width=window.innerWidth;
+  console.log(width); 
+  var lls= document.getElementById("check");
+  if(width>795){
+   $("#slide").show();
+   console.log('Kbira');
+  }
+   else if(lls.checked==true) {
+    $("#slide").hide();
+   
+    $("#slide").animate({
+           opacity:'1'}, "slow"
+        );
+   } 
+}
+  $('input[name=checkbox]').change(function(){
+      if($(this).is(':checked')) {
+        console.log("ykhdem");
+        console.log("9bal loula");
+    $("#slide").hide();
+      console.log("Loula"); 
+        $("#slide").animate({
+          right :'hide',
+           opacity:'0.5'}, "fast"
+        );     
+    } else {
+      console.log("ykhdmch");
+      $("#slide").show();
+    console.log('Sghira');
+    $("#slide").animate({  
+      left :'show',
+           opacity:'1'}, "slow"
+        );
+      m=0; 
+    }
+});
+  });  
+    </script>
+<body>
+   
+<nav>
+  <input type="checkbox" id="check" name="checkbox">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><strong>Your Logo</strong></label>
+      <ul>
+<div class="topnav" id="myTopnav">
+  <li><a href="#About" class="cool-link">About</a></li>
+  <li><a href="#Resume" class="cool-link">Resume</a></li>
+  <li><a href="#Reel" class="cool-link">Reel</a></li>
+  <li><a href="#Gallery" class="cool-link">Gallery</a></li>
+  <li><a href="#Contact" class="cool-link">Contact</a></li>
+  
+
+</div>
+</nav>
+<div id="slide" >
+  <li><h1>Hello My name Is<span id="demo"></span> <strong>hdfhd</strong></h1></li>
+  <img src="https://scontent.ftun12-1.fna.fbcdn.net/v/t1.0-9/p960x960/79442015_2728509087211327_5311648396413501440_o.jpg?_nc_cat=102&_nc_sid=7aed08&_nc_ohc=MK_PL9eIIhEAX8sapyK&_nc_ht=scontent.ftun12-1.fna&_nc_tp=6&oh=c280092b471e2dde378a013cace3493a&oe=5EF3C7DF" alt="Flowers in Chania">
+</div>
+
+</body>
+</html>
