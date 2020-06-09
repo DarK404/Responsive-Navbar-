@@ -22,7 +22,7 @@ function function1(){
 }
   $('input[name=checkbox]').change(function(){
       if($(this).is(':checked')) {
-        console.log("ykhdem");
+        console.log("ykhdem1");
         console.log("9bal loula");
     $("#slide").hide();
       console.log("Loula"); 
